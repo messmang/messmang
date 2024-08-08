@@ -4,6 +4,14 @@ import './App.css';
 import { Link } from 'react-router-dom';
 import { SectionsContainer, Section } from 'react-fullpage';
 
+import bg1 from "./img/zuzu-bg.png"
+import bg1m from "./img/zuzu-m-bg.png"
+import bg2 from "./img/sh-bg.png"
+import bg3 from "./img/drive-bg.png"
+import mainImg from "./img/finder-symbol.svg"
+import Light from './Light';
+import LightMobile from './LightMobile';
+
 const Container = styled.div`
   display: flex;
   align-items: stretch;
@@ -63,18 +71,23 @@ const NavBtn = styled.button`
   padding: 18px 20px;
   gap: 0.5rem;
 
-  font-size: 20px;
-  background: #66666660;
-  border: 1px solid #adadad;
-
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
   &:hover {
     cursor: pointer;
     filter: brightness(1.5);
+    border: 1px solid #999;
+    box-shadow: 0 0 20px 0px #666;
   }
-
+  
   @media screen and (max-width: 599px) {
     width: 100% !important;
-    height: 10rem !important;
+    height: 7.2rem !important;
+    background-position: top center;
+    background-size: cover;
   }
   `
 
@@ -86,7 +99,6 @@ export const Caption = styled.span`
     color: #ffffff9a;
   }
 `
-
 
 const Main = () => {
   let options = {
@@ -120,6 +132,9 @@ const Main = () => {
               발견한 의미에 알맞은 가치를 더해 특별함을 확장하여 전달합니다.
             </h4>
           </FlexColBox>
+          <LightMobile/>
+          <Light/>
+          <img src={mainImg} style={{position: "absolute", right: "0", top: "30rem"}} height={80}/>
           <FlexBox style={{justifyContent: "space-between", alignSelf: "stretch"}}>
             <h4 style={{opacity: 0.6}}>2024 Product Designer Portfolio</h4>
             <Caption className="mHide">← → 화살표를 눌러보세요</Caption>
@@ -129,24 +144,26 @@ const Main = () => {
     </Section>
     <Section>
       <Container>
-        <h1 className='mHide' style={{position: "absolute"}}>Project list</h1>
-        <MobileWrapper style={{gap: "1.5rem", justifyContent: "space-between", flexGrow: 1}}>
+        <h1 className='mHide' style={{position: "absolute", fontWeight: "bold"}}>Project list</h1>
+        <MobileWrapper style={{gap: "2rem", justifyContent: "space-between", flexGrow: 1}}>
           <FlexBox style={{alignSelf: "flex-end"}}>
-            <Link to="/zuzu">
-              <NavBtn style={{width: "45rem",  height: "30rem", alignSelf: "flex-end"}}>
-                ZUZU <br/> <Caption>5ea</Caption>
+            <Link to="/zuzu" className='mHide'>
+              <NavBtn style={{width: "50rem",  height: "30rem", alignSelf: "flex-end", backgroundImage: `url(${bg1})`}}>
+                {/* ZUZU <br/> <Caption>5ea</Caption> */}
               </NavBtn>
             </Link>
           </FlexBox>
-          <FlexColBox style={{alignSelf: "flex-start", gap: "1rem", alignItems: "stretch", flexGrow: "1"}}>
+          <FlexColBox style={{alignSelf: "flex-start", gap: "2rem", alignItems: "stretch", flexGrow: "1"}}>
+            <h2 className='mShow'>Project list</h2>
+            <Link to="/zuzu" className="mShow">
+              <NavBtn style={{height: "14rem", backgroundImage: `url(${bg1m})`}}></NavBtn>
+            </Link>
             <Link to="/same-here" >
-              <NavBtn style={{height: "10rem"}}>
-              Same here
+              <NavBtn style={{height: "14rem", backgroundImage: `url(${bg2})`}}>
               </NavBtn>
             </Link>
             <Link to="/driving-all-right" >
-              <NavBtn style={{height: "10rem"}}>
-              운전 중, 이상 무
+              <NavBtn style={{height: "14rem", backgroundImage: `url(${bg3})`}}>
               </NavBtn>
             </Link>
             <a href="https://drive.google.com/drive/u/0/folders/1qe7wq5Qab2E0yONcyAjBlJmEqv_CNn5O"

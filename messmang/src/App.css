@@ -2,6 +2,10 @@
   .app {
     max-width: 74rem;
   }
+
+  .mShow {
+    display: none;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 1199px) {
@@ -10,6 +14,10 @@
   }
 
   .mHide {
+    display: none;
+  }
+
+  .mShow {
     display: none;
   }
 }
@@ -21,6 +29,10 @@
 
   .mHide {
     display: none;
+  }
+
+  .mShow {
+    display: unset;
   }
 }
 
