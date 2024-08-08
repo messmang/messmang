@@ -3,7 +3,7 @@ import styled from "styled-components";
 import './App.css';
 
 import coverImg from "./img/zuzu-summary.png"
-import { Caption } from './Main';
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
   display: flex;
@@ -63,6 +63,15 @@ const ItemBtn = styled.button`
   }
 `
 
+const Caption = styled.span`
+  margin-top: 0.5rem;
+  color: #ffffff6a;
+
+  @media screen and (max-width: 599px) {
+  margin-top: 0;
+  }
+`
+
 const ZuzuDetail = () => {
   return (
     <Container className='zuzu'>
@@ -73,11 +82,24 @@ const ZuzuDetail = () => {
           <Caption>상세 페이지로 이동해요</Caption>
         </FlexBox>
         <FlexBox style={{gap: "1rem", flexWrap: "wrap", justifyContent: "stretch" }}>
-          <ItemBtn>누적 천만원의 계약을 만든 행사 관리 <Badge>신기능</Badge></ItemBtn>
-          <ItemBtn>핵심 고객사를 유치한 자체 계약서 <Badge>신기능 · 개선</Badge></ItemBtn>
-          <ItemBtn>1주일 만에 출시한 결제 링크 <Badge>신기능</Badge></ItemBtn>
-          <ItemBtn>다양한 VOC를 만족시킨 1주일 만에 주식 변동 이력 <Badge>개선</Badge></ItemBtn>
-          <ItemBtn>4명 → 13명의 개발팀을 위한 디자인 시스템 <Badge>개선</Badge></ItemBtn>
+          <Link to='https://courageous-smash-dfc.notion.site/2cf1ac9371cf4f708917defd3f1378de?pvs=4' target='_blank'>
+            <ItemBtn>천만원+의 계약을 만든 행사 관리 <Badge>신기능</Badge></ItemBtn>
+          </Link>
+          <Link to='https://courageous-smash-dfc.notion.site/4-2c15985442804757a572386af4101f13?pvs=4' target='_blank'>
+            <ItemBtn>4백만원+ 계약을 유치한 자체 계약서 <Badge>신기능 · 개선</Badge></ItemBtn>
+          </Link>
+          <Link to='https://courageous-smash-dfc.notion.site/1-1-f31251d8196543bab6e5a0c746dc310d?pvs=4' target='_blank'>
+            <ItemBtn>1주일 만에 출시한 결제 링크 <Badge>신기능</Badge></ItemBtn>
+          </Link>
+          <Link to='https://courageous-smash-dfc.notion.site/VOC-1-2127d0fd50314cf7aeecd057e01e6e77?pvs=4' target='_blank'>
+            <ItemBtn>다양한 VOC를 만족시킨 1주일 만에 주식 변동 이력 <Badge>개선</Badge></ItemBtn>
+          </Link>
+          {/* <Link to='https://www.youtube.com/watch?v=-Xp9n7-k6Mc' target='_blank'>
+            <ItemBtn>4명 → 13명의 개발팀을 위한 디자인 시스템 <Badge>개선</Badge></ItemBtn>
+          </Link> */}
+          <Link to='https://www.youtube.com/watch?v=-Xp9n7-k6Mc' target='_blank'>
+            <ItemBtn>EO 주관 채용설명회 출연<Badge>youtube</Badge></ItemBtn>  
+          </Link>
           {/* <ItemBtn>Pro 요금제 출시 - 세모</ItemBtn>  */}
           {/* (스톡옵션 유료화 + 주식 양수도 유료화) */}
           {/* <ItemBtn>스톡옵션 업셀 넛지</ItemBtn> */}

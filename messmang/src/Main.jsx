@@ -158,11 +158,11 @@ const Main = () => {
             <Link to="/zuzu" className="mShow">
               <NavBtn style={{height: "14rem", backgroundImage: `url(${bg1m})`}}></NavBtn>
             </Link>
-            <Link to="/same-here" >
+            <Link to="https://drive.google.com/file/d/1l5aT4dTz1LuOmCANaRtozKyE7WZG7vSm/view?usp=drive_link" target='_blank' >
               <NavBtn style={{height: "14rem", backgroundImage: `url(${bg2})`}}>
               </NavBtn>
             </Link>
-            <Link to="/driving-all-right" >
+            <Link to="https://drive.google.com/file/d/1CHjZH9t29us3zpBncLwZtnUUctw_K-LE/view?usp=drive_link" target='_blank' >
               <NavBtn style={{height: "14rem", backgroundImage: `url(${bg3})`}}>
               </NavBtn>
             </Link>
