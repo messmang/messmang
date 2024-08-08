@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/messmang/static/css/main.7a7fe622.css",
+    "main.js": "/messmang/static/js/main.bd8f847a.js",
+    "static/js/453.4eadf94a.chunk.js": "/messmang/static/js/453.4eadf94a.chunk.js",
+    "static/media/zuzu-bg.png": "/messmang/static/media/zuzu-bg.b3150fddb98accb16bd3.png",
+    "static/media/sh-bg.png": "/messmang/static/media/sh-bg.ad3e50e3ceb4bd2953ad.png",
+    "static/media/zuzu-m-bg.png": "/messmang/static/media/zuzu-m-bg.2cdd33ed520dacb503a7.png",
+    "static/media/drive-bg.png": "/messmang/static/media/drive-bg.10063f5967d0e3abfe7b.png",
+    "static/media/zuzu-summary.png": "/messmang/static/media/zuzu-summary.b4778480b4374265d6ea.png",
+    "static/media/finder-symbol.svg": "/messmang/static/media/finder-symbol.2ec55446276a8cc996e3281d9d0c6ca3.svg",
+    "index.html": "/messmang/index.html",
+    "main.7a7fe622.css.map": "/messmang/static/css/main.7a7fe622.css.map",
+    "main.bd8f847a.js.map": "/messmang/static/js/main.bd8f847a.js.map",
+    "453.4eadf94a.chunk.js.map": "/messmang/static/js/453.4eadf94a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a7fe622.css",
+    "static/js/main.bd8f847a.js"
+  ]
+}
